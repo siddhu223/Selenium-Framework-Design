@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Ecommerce Website">
+	<groups>
+		<run>
+			<include name="errorhandling" />
+		</run>
+	</groups>
+	<test thread-count="5" name="Stand Alone Test">
+		<classes>
+			<class name="SiddheshWorkspace.standAloneTest" />
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+			<class name="SiddheshWorkspace.errorValidationTest" />
+		</classes>
+	</test>
+</suite> 

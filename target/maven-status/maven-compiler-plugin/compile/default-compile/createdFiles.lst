@@ -1,0 +1,8 @@
+SiddheshWorkspace\pageObjects\confirmationPage.class
+SiddheshWorkspace\pageObjects\landingPage.class
+SiddheshWorkspace\pageObjects\productCatalogue.class
+SiddheshWorkspace\pageObjects\cartPage.class
+SiddheshWorkspace\pageObjects\billingPage.class
+siddhesh\abstractComponents\reusableCode.class
+siddhesh\resources\ExtentReporterNG.class
+SiddheshWorkspace\pageObjects\OrderPage.class
