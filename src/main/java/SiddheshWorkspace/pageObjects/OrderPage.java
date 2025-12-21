@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import siddhesh.abstractComponents.reusableCode;
+import siddhesh.abstractComponents.reusablecode;
 
-public class OrderPage extends reusableCode {
+
+public class OrderPage extends reusablecode {
  
 	WebDriver driver;
 

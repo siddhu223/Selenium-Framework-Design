@@ -6,13 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import siddhesh.abstractComponents.reusablecode;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
 
 
-public class CartPage extends AbstractComponent {
+
+
+
+public class CartPage extends reusablecode {
 	WebDriver driver;
 
 	@FindBy(css = ".totalRow button")
@@ -47,23 +50,7 @@ public class CartPage extends AbstractComponent {
 
 	}
 	
-	// Method to delete all items from the cart
-    public void deleteAllItems() throws InterruptedException {
-    	List<WebElement> deleteButtons = getDeletebuttons;
-    	while (!deleteButtons.isEmpty()) {
-          for (WebElement deleteButton : deleteButtons) {
-            try {
-                deleteButton.click();
-                waitForStaleness(deleteButton);
-            } catch (StaleElementReferenceException e) {
-            	// Handle stale element reference exception
-                // Re-locate the elements or handle the situation accordingly
-                System.out.println("Stale element reference: " + e.getMessage());
-            }
-          }
-          deleteButtons = getDeletebuttons;
-    	}
-    }
+
 
     // Method to check if the cart is empty
     public boolean isCartEmpty() {
@@ -76,5 +63,6 @@ public class CartPage extends AbstractComponent {
             return true;
         }
     }
-
 }
+
+

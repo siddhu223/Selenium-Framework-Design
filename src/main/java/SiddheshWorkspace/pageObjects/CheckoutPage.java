@@ -8,9 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
+import siddhesh.abstractComponents.reusablecode;
 
-public class CheckoutPage extends AbstractComponent {
+
+
+public class CheckoutPage extends reusablecode {
 
 	WebDriver driver;
 

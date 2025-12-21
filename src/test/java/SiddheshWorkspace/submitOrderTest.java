@@ -27,7 +27,7 @@ public class submitOrderTest extends baseTest {
 	@Test(dataProvider = "getData", groups = "purchase")
 	public void submitOrder(HashMap<String, String> input) throws InterruptedException {
 
-		productCatalogue catalogue = landingpage.signIn(input.get("email"), input.get("password"));
+		productCatalogue catalogue = landingPage.signIn(input.get("email"), input.get("password"));
 		catalogue.loginMessagePopUp();
 		List<WebElement> products = catalogue.getProductList();
 		catalogue.getProductByName(input.get(productName));
@@ -52,7 +52,7 @@ public class submitOrderTest extends baseTest {
 	@Test(dependsOnMethods = { "submitOrder" })
 	public void orderHistoryTest() {
 		// ADIDAS ORIGINAL verify in order history present or not
-		productCatalogue catalogue = landingpage.signIn("siddheshmalusare0113@gmail.com", "Mal_sidh@0113");
+		productCatalogue catalogue = landingPage.signIn("siddheshmalusare0113@gmail.com", "Mal_sidh@0113");
 		OrderPage orderpage = catalogue.goToOrderPage();
 		Assert.assertTrue(orderpage.verifyOrderDisplay(productName));
 	}

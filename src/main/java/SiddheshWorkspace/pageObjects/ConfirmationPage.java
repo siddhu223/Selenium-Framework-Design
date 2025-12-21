@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
+import siddhesh.abstractComponents.reusablecode;
 
-public class ConfirmationPage extends AbstractComponent{
+
+
+public class ConfirmationPage extends reusablecode{
 
 	
 	WebDriver driver;

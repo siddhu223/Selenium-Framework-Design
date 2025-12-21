@@ -11,9 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
+import siddhesh.abstractComponents.reusablecode;
 
-public class LandingPage extends AbstractComponent{
+
+
+public class LandingPage extends reusablecode{
 
 	 WebDriver driver;
 	 WebDriverWait wait;
@@ -103,5 +105,10 @@ public class LandingPage extends AbstractComponent{
     {
     	Home.click();
     }
+
+	public productCatalogue signIn(String string, String string2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 		
 }
