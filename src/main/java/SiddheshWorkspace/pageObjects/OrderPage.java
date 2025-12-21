@@ -18,6 +18,7 @@ public class OrderPage extends reusablecode {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		
 
 	}
 
@@ -30,6 +31,7 @@ public class OrderPage extends reusablecode {
 	public  Boolean verifyOrderDisplay(String productName) {
          Boolean match =CartProduct.stream().anyMatch(cartProduct -> cartProduct.getText().equals(productName));
 	     return match;
+		 System.out.println("cartProducts");
 
 	}
 
