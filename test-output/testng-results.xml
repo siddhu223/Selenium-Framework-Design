@@ -1,78 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-18T22:28:34 IST" name="Default suite" finished-at="2025-12-18T22:28:35 IST" duration-ms="1206">
+  <suite started-at="2025-12-21T13:25:40 IST" name="Default suite" finished-at="2025-12-21T13:25:45 IST" duration-ms="4920">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@63475ace]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-12-18T22:28:34 IST" name="Default test" finished-at="2025-12-18T22:28:35 IST" duration-ms="1206">
-      <class name="Cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Cucumber.TestNGTestRunner@63475ace]" started-at="2025-12-18T22:28:34 IST" name="setUpClass" finished-at="2025-12-18T22:28:35 IST" duration-ms="695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@63475ace]" started-at="2025-12-18T22:28:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-18T22:28:35 IST" duration-ms="362" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive Test of submitting the orderr"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Purchase the order from Ecommerce website]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2025-12-21T13:25:40 IST" name="Default test" finished-at="2025-12-21T13:25:45 IST" duration-ms="4920">
+      <class name="SiddheshWorkspace.standAloneTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SiddheshWorkspace.standAloneTest@7dcf94f8]" started-at="2025-12-21T13:25:40 IST" name="setup" finished-at="2025-12-21T13:25:45 IST" duration-ms="4624" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "SiddheshWorkspace.pageObjects.landingPage.signIn(String, String)" because "this.context.landingpage" is null]]>
+              <![CDATA[Unresolved compilation problems: 
+The import rahulshettyacademy cannot be resolved
+AbstractComponent cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+The method waitForWebElementToAppear(WebElement) is undefined for the type LandingPage
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "SiddheshWorkspace.pageObjects.landingPage.signIn(String, String)" because "this.context.landingpage" is null
-at siddheshselenium.stepDefinations.stepDefinationImplementation.Logged_in_with_username_and_password(stepDefinationImplementation.java:47)
-at ✽.Logged in with username siddheshmalusare0113@gmail.com and password Mal_sidh@0113(file:///C:/Users/siddh/eclipse/SeleniumFrameworkDesign/src/test/java/Cucumber/submitOrderTest.feature:10)
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The import rahulshettyacademy cannot be resolved
+AbstractComponent cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+The method waitForWebElementToAppear(WebElement) is undefined for the type LandingPage
+
+at SiddheshWorkspace.pageObjects.LandingPage.<init>(LandingPage.java:14)
+at siddheshselenium.TestComponents.baseTest.setup(baseTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@63475ace]" started-at="2025-12-18T22:28:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-18T22:28:35 IST" duration-ms="21" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive Test of submitting the orderr"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Purchase the order from Ecommerce website]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- setup -->
+        <test-method signature="submitorder()[pri:0, instance:SiddheshWorkspace.standAloneTest@7dcf94f8]" started-at="2025-12-21T13:25:45 IST" name="submitorder" finished-at="2025-12-21T13:25:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "SiddheshWorkspace.pageObjects.landingPage.signIn(String, String)" because "this.context.landingpage" is null]]>
+              <![CDATA[Unresolved compilation problems: 
+The import rahulshettyacademy cannot be resolved
+AbstractComponent cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+The method waitForWebElementToAppear(WebElement) is undefined for the type LandingPage
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "SiddheshWorkspace.pageObjects.landingPage.signIn(String, String)" because "this.context.landingpage" is null
-at siddheshselenium.stepDefinations.stepDefinationImplementation.Logged_in_with_username_and_password(stepDefinationImplementation.java:47)
-at ✽.Logged in with username malusarexyz@gmail.com and password Avinash@0113(file:///C:/Users/siddh/eclipse/SeleniumFrameworkDesign/src/test/java/Cucumber/submitOrderTest.feature:10)
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+The import rahulshettyacademy cannot be resolved
+AbstractComponent cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+ProductCatalogue cannot be resolved to a type
+The method waitForWebElementToAppear(WebElement) is undefined for the type LandingPage
+
+at SiddheshWorkspace.pageObjects.LandingPage.<init>(LandingPage.java:14)
+at siddheshselenium.TestComponents.baseTest.setup(baseTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@63475ace]" started-at="2025-12-18T22:28:35 IST" name="tearDownClass" finished-at="2025-12-18T22:28:35 IST" duration-ms="55" status="PASS">
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SiddheshWorkspace.standAloneTest@7dcf94f8]" started-at="2025-12-21T13:25:45 IST" name="tearDown" finished-at="2025-12-21T13:25:45 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNGTestRunner -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiddheshWorkspace.standAloneTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

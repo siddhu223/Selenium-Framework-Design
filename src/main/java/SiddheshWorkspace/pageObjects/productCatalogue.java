@@ -1,6 +1,5 @@
 package SiddheshWorkspace.pageObjects;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,9 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
+import siddhesh.abstractComponents.AbstractComponent;
+
+
 
 public class productCatalogue extends AbstractComponent {
 
@@ -53,6 +53,11 @@ public class productCatalogue extends AbstractComponent {
 		prod.findElement(addToCart).click();
 		waitForElementToAppear(toastMessage);
 		waitForElementToDisappear(spinner);
+	}
+
+	public void loginMessagePopUp() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
