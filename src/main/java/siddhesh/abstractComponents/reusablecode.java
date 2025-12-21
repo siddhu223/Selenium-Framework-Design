@@ -13,11 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import SiddheshWorkspace.pageObjects.OrderPage;
 
-public class AbstractComponent {
+public class reusablecode {
 
 	WebDriver driver;
 
-	public AbstractComponent(WebDriver driver) {
+	public reusablecode(WebDriver driver) {
 		// super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

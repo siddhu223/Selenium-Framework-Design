@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import siddhesh.abstractComponents.AbstractComponent;
+import siddhesh.abstractComponents.reusablecode;
 
 
 
-public class productCatalogue extends AbstractComponent {
+public class productCatalogue extends reusablecode {
 
 	WebDriver driver;
 
